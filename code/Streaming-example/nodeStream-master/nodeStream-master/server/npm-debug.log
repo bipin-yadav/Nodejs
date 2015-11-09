@@ -1,0 +1,59 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'connect.js' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of C:\Users\bi301759\Desktop\nodeStream-master\nodeStream-master\server\package.json
+5 warn package.json streamServer@ No repository field.
+6 warn package.json streamServer@ No license field.
+7 verbose readDependencies loading dependencies from C:\Users\bi301759\Desktop\nodeStream-master\nodeStream-master\server\package.json
+8 silly cache add args [ 'connect.js', null ]
+9 verbose cache add spec connect.js
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'connect.js',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'connect.js',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 silly addNamed connect.js@*
+12 verbose addNamed "*" is a valid semver range for connect.js
+13 silly addNameRange { name: 'connect.js', range: '*', hasData: false }
+14 silly mapToRegistry name connect.js
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/connect.js
+18 verbose addNameRange registry:https://registry.npmjs.org/connect.js not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/connect.js
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 10:09:48 AM
+22 verbose request id c5545a941ad68dd6
+23 http request GET https://registry.npmjs.org/connect.js
+24 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 103.245.222.162:443
+25 info attempt registry request try #2 at 10:10:22 AM
+26 http request GET https://registry.npmjs.org/connect.js
+27 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 103.245.222.162:443
+28 info attempt registry request try #3 at 10:11:43 AM
+29 http request GET https://registry.npmjs.org/connect.js
+30 verbose stack Error: connect ETIMEDOUT 103.245.222.162:443
+30 verbose stack     at Object.exports._errnoException (util.js:874:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:897:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+31 verbose cwd C:\Users\bi301759\Desktop\nodeStream-master\nodeStream-master\server
+32 error Windows_NT 6.1.7601
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "connect.js"
+34 error node v4.2.1
+35 error npm  v2.14.7
+36 error code ETIMEDOUT
+37 error errno ETIMEDOUT
+38 error syscall connect
+39 error network connect ETIMEDOUT 103.245.222.162:443
+39 error network This is most likely not a problem with npm itself
+39 error network and is related to network connectivity.
+39 error network In most cases you are behind a proxy or have bad network settings.
+39 error network
+39 error network If you are behind a proxy, please make sure that the
+39 error network 'proxy' config is set properly.  See: 'npm help config'
+40 verbose exit [ 1, true ]
