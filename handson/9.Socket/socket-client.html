@@ -1,0 +1,12 @@
+<html>
+<script src="/socket.io/scoket.io.js"></script>
+<body>
+<script>
+var scoket = io.connect("http://localhost:8000")
+socket.emit("message,"hello");
+socket.on("echo", function(data){
+	document.write("Server says..."+data);
+});
+</script>
+<body>
+</html>
