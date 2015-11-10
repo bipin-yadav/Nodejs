@@ -1,3 +1,3 @@
-npm --proxy http://bi301759:2.7%40yearagO@proxy2.wipro.com:80 install express
+npm --proxy http://bi301759:pwd@proxy2.wipro.com:80 install express
 
 npm install <<package-name>> --proxy http://adID:pwd@proxy-name:8080
